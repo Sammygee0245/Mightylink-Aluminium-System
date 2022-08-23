@@ -12,7 +12,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 116vh;
+  height: 146vh;
 }
 
 nav {
@@ -58,6 +58,7 @@ a:hover {
 li {
   list-style: none;
   color: white;
+  font-size: 21px;
   padding: 5px 10px;
 }
 
@@ -97,7 +98,7 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 50%;
+  margin-left: 28%;
   width: 50%;
   height: 100%;
 }
@@ -107,27 +108,31 @@ li {
   width: 90%;
   height: 40%;
   margin-top: 5rem;
+  align-self: left;
 }
 
 .lead-text {
-  font-weight: 800;
+  font-weight: 600;
   font-size: 2rem;
-  color: black;
+  color: rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
+  border-radius: 10px;
+  padding: 50px;
   font-family: "Rubik Distressed", Arial;
 }
 
 .lead-des-div {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: right;
-  width: 90%;
+  width: 70%;
   height: 30%;
   margin-top: 1rem;
 }
 
 .dess {
   font-weight: 900;
-  font-family: Arail;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .social-media-div {
@@ -145,109 +150,152 @@ li {
 }
 
 .sec2 {
-  background-color: white;
   width: 100%;
-  height: 128vh;
+  height: 100vh;
+  margin-top: 50px;
 }
 
 h2 {
   margin-left: 30%;
 }
 
-.about {
-  display: flex;
-  flex-direction: column;
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   width: 100%;
-  height: 45vh;
+  height: 70%;
 }
 
-.img-div {
+.abtt {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
   width: 100%;
-  height: 100%;
+  line-height: 100%;
 }
 
-.glazier {
-  height: 200px;
+.abt {
+  width: 100%;
+  line-height: 100%;
+  align-self: center;
 }
 
-.glaz-info {
+.mag {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 200px;
-  width: 300px;
-  background-color: #023246;
-  color: #ffffff;
+  width: 100%;
+  line-height: 100%;
 }
 
-.why {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+.aim {
+  width: 90%;
+}
+
+.grid4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 100%;
   height: 100%;
-  margin-top: 5rem;
-}
-
-.my-why {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  width: 100%;
-  height: 90vh;
-  background-image: url("mighty pictures/glass\ wallpaper\ 2.webp");
+  background-image: url("mighty pictures/sky\ background.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: scroll;
   background-size: cover;
-  background-color: #003158;
-  background-blend-mode: multiply;
+  margin-top: 3rem;
 }
 
-.reason {
+.rec {
   display: flex;
-  align-items: center;
   flex-direction: column;
-  width: 300px;
-  height: 200px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30%;
+  width: 100%;
+  height: 80px;
+}
+
+.num {
+  font-size: 5rem;
   color: white;
 }
 
-.cu {
-  font-size: 19px;
-  font-weight: 900;
-  color: #a04d16;
+.ex {
+  font-size: 1.5rem;
+  color: white;
 }
 
-.son {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 300px;
-  height: 200px;
-}
-
-@media (max-width: 648px) {
-  .img-div {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+@media (max-width: 750px) {
+  .aim {
     width: 100%;
-    height: 100%;
-    margin-top: 4rem;
   }
 
-  .why {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  .grid2 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .grid4 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
     width: 100%;
     height: 100%;
+    background-image: url("mighty pictures/sky\ background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
     margin-top: 6rem;
+  }
+
+  .rec {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .num {
+    font-size: 25px;
+    color: white;
+  }
+
+  .ex {
+    font-size: 1.2rem;
+    color: white;
+  }
+}
+
+@media (max-width: 500px) {
+  .aim {
+    display: 100%;
+  }
+
+  .grid2 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .grid4 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    height: 100%;
+    background-image: url("mighty pictures/sky\ background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+    margin-top: 7rem;
+  }
+
+  .rec {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .num {
+    font-size: 1rem;
+    color: white;
+  }
+
+  .ex {
+    font-size: 1rem;
+    color: white;
   }
 }
 
@@ -396,13 +444,22 @@ form {
 }
 
 .social-media-divi {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   height: 99%;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0);
-  backdrop-filter: blur(3px);
+  background-color: rgb(2, 9, 71);
+  color: white;
+}
+
+.last {
+  margin-top: 4rem;
+  width: 49%;
+}
+
+.medi {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .loader {
