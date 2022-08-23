@@ -8,6 +8,7 @@ toglebtn.addEventListener("click", function () {
   } else {
     toglebtn.classList.add("tt");
     ul.style.display = "block";
+    toglebtn.src = "mighty pictures/close icon.png";
   }
 });
 
