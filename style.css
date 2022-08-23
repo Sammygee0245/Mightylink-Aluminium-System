@@ -455,6 +455,7 @@ form {
 .last {
   margin-top: 4rem;
   width: 49%;
+  margin-left: 2rem;
 }
 
 .medi {
@@ -465,9 +466,11 @@ form {
 .loader {
   width: 80px;
   height: 80px;
-  border: 3px solid transparent;
-  border-left-color: rgb(255, 255, 255);
-  border-top-color: rgb(255, 255, 255);
+  border: 10px solid transparent;
+  border-left-color: rgb(216, 231, 0);
+  border-top-color: rgb(224, 0, 0);
+  border-right-color: blue;
+  border-bottom-color: rgb(30, 255, 0);
   position: relative;
   border-radius: 100%;
   animation: loading 2s infinite linear;
@@ -481,9 +484,11 @@ form {
   right: 10px;
   bottom: 10px;
   content: "";
-  border: 3px solid transparent;
-  border-left-color: rgb(255, 255, 255);
-  border-top-color: rgb(255, 255, 255);
+  border: 5px solid transparent;
+  border-left-color: rgb(16, 0, 245);
+  border-top-color: rgb(0, 255, 21);
+  border-right-color: rgb(226, 5, 255);
+  border-bottom-color: rgb(255, 0, 179);
   border-radius: 100%;
   animation: loading 1s infinite linear reverse;
 }
@@ -495,9 +500,11 @@ form {
   right: 20px;
   bottom: 20px;
   content: "";
-  border: 3px solid transparent;
-  border-left-color: rgb(255, 255, 255);
-  border-top-color: rgb(255, 255, 255);
+  border: 1.5px solid transparent;
+  border-left-color: rgb(0, 72, 82);
+  border-top-color: rgb(235, 173, 2);
+  border-right-color: rgb(235, 192, 1);
+  border-bottom-color: rgb(160, 219, 64);
   border-radius: 100%;
   animation: loading 3s infinite linear;
 }
@@ -514,12 +521,15 @@ form {
 
 .pre {
   display: flex;
-  background: rgb(0, 1, 49);
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.993);
+  backdrop-filter: blur(3px);
   height: 100vh;
   width: 100%;
   position: fixed;
   z-index: 100;
   align-items: center;
   justify-content: center;
+  color: white;
   opacity: 1;
 }
